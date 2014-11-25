@@ -113,24 +113,24 @@
 ** BEGIN HTTP headers defines
 ** ------------------------------------------------------------
 */
-#define HV_HTTP_COOKIE				"cookie"
-#define HV_HTTP_QUERY				"query"
-#define HV_HTTP_URI					"uri"
+#define HV_HTTP_COOKIE			"cookie"
+#define HV_HTTP_QUERY			"query"
+#define HV_HTTP_URI			"uri"
 #define HV_HTTP_CONTENT_TYPE		"content-type"
 #define HV_HTTP_CONTENT_LENGTH		"content-length"
-#define HV_HTTP_USER_AGENT			"user-agent"
-#define HV_HTTP_METHOD				"method"
+#define HV_HTTP_USER_AGENT		"user-agent"
+#define HV_HTTP_METHOD			"method"
 #define HV_HTTP_DATA_REMOVED		"data-removed"
-#define HV_HTTP_CLF_REQUEST			"clf-request"
-#define HV_HTTP_SET_COOKIE			"set-cookie"
-#define HV_HTTP_SET_CCOOKIE			"Set-Cookie"
-#define HV_HTTP_AUTH_CERT			"auth-cert"
-#define HVT_LOGON_APPLID			"logon-applid"
-#define HVT_APPLID_ERROR			"error"
-#define HVT_COOKIE_ALTEONP			"AlteonP"
+#define HV_HTTP_CLF_REQUEST		"clf-request"
+#define HV_HTTP_SET_COOKIE		"set-cookie"
+#define HV_HTTP_SET_CCOOKIE		"Set-Cookie"
+#define HV_HTTP_AUTH_CERT		"auth-cert"
+#define HVT_LOGON_APPLID		"logon-applid"
+#define HVT_APPLID_ERROR		"error"
+#define HVT_COOKIE_ALTEONP		"AlteonP"
 #define HVT_COOKIE_PERSISTENCE		"JcdaCookie"            // @CHID(20111005) Added 05/10/2011, Persistence cookie
-#define HVT_COOKIE_SMS				"CookieSMS"				// @CHID(20110317) Added 17/03/2011, SMS Auth
-#define HVT_TEXT_HTML				"text/html"
+#define HVT_COOKIE_SMS			"CookieSMS"		// @CHID(20110317) Added 17/03/2011, SMS Auth
+#define HVT_TEXT_HTML			"text/html"
 
 /*
 ** ------------------------------------------------------------
@@ -144,14 +144,14 @@
 ** ------------------------------------------------------------
 */
 
-#define	ENTRUST_PREFIX				"entrust"
-#define	ENTRUST_PREFIX_LEN			7
+#define	ENTRUST_PREFIX			"entrust"
+#define	ENTRUST_PREFIX_LEN		7
 	
-#define ENTRUST_CLIENT_INFO			"entrust-client-info"
-#define ENTRUST_CLIENT_IP			"entrust-client-ip"
-#define ENTRUST_CLIENT				"entrust-client"
+#define ENTRUST_CLIENT_INFO		"entrust-client-info"
+#define ENTRUST_CLIENT_IP		"entrust-client-ip"
+#define ENTRUST_CLIENT			"entrust-client"
 #define ENTRUST_CLIENT_CERTIFICATE	"entrust-client-certificate"
-#define ENTRUST_SERVER				"entrust-server"
+#define ENTRUST_SERVER			"entrust-server"
 
 /*
 ** ------------------------------------------------------------
@@ -194,8 +194,8 @@
 #define HVT_LOGMASK_CURLERRORCODE	"libCURL returns error code=%d"
 #define HVT_LOGMASK_NOMETHOD		"Could not get HTTP METHOD - aborting" 
 #define HVT_LOGMASK_NOAPPLID		"Could not get logon applid - aborting" 
-#define HVT_LOGMASK_NOURI			"Could not get URI in request - aborting" 
-#define HVT_LOGMASK_NOQUERY			"Could not get QUERY in request - aborting" 
+#define HVT_LOGMASK_NOURI		"Could not get URI in request - aborting" 
+#define HVT_LOGMASK_NOQUERY		"Could not get QUERY in request - aborting" 
 #define HVT_LOGMASK_NOCONTENTLEN	"Could not get CONTENT_LENGHT in request - aborting" 
 #define HVT_LOGMASK_NOCLFREQUEST	"Could not get CLF_REQUEST in request - aborting" 
 #define HVT_LOGMASK_PATHCHECKSIGN	"Entering PathCheck SAF" 
@@ -238,22 +238,22 @@
 ** BEGIN HVTunnel Config declarations
 ** ------------------------------------------------------------
 */
-#define HV_HTTP_MAXQUERYLEN			512
-#define HV_CFG_MAX_MMALLOC			1024
-#define HV_LOG_MAX_MMALLOC			1024
-#define HPR_X509_CERT_SIZE			32768
+#define HV_HTTP_MAXQUERYLEN		512
+#define HV_CFG_MAX_MMALLOC		1024
+#define HV_LOG_MAX_MMALLOC		1024
+#define HPR_X509_CERT_SIZE		32768
 
-#define HVT_CFG_HTTP_ToURI			"HVTunnel.http.ToURI"
-#define HVT_CFG_HTTP_CTOUT			"HVTunnel.http.connect.timeout"
-#define HVT_CFG_HTTP_TTOUT			"HVTunnel.http.transfer.timeout"
+#define HVT_CFG_HTTP_ToURI		"HVTunnel.http.ToURI"
+#define HVT_CFG_HTTP_CTOUT		"HVTunnel.http.connect.timeout"
+#define HVT_CFG_HTTP_TTOUT		"HVTunnel.http.transfer.timeout"
 #define HVT_CFG_HTTP_REDIRECTS		"HVTunnel.http.Redirects"
 #define HVT_CFG_HTTP_VERBOSE 		"HVTunnel.http.Verbose"
 #define HVT_CFG_HTTP_ENVIRONMENT 	"HVTunnel.http.Environment"
-#define HVT_CFG_LOGG_Level			"HVTunnel.Logg.Level"
+#define HVT_CFG_LOGG_Level		"HVTunnel.Logg.Level"
 #define HVT_CFG_LOGG_DmpInit		"HVTunnel.Logg.DumpInit"
 #define HVT_CFG_LOGG_PERFORMANCE	"HVTunnel.Logg.Performance"
-#define HVT_CFG_BACKEND_URI			"HVTunnel.Backend.URI"
-#define HVT_CFG_TEST_FILE			"HVTunnel.Test.Certificate"
+#define HVT_CFG_BACKEND_URI		"HVTunnel.Backend.URI"
+#define HVT_CFG_TEST_FILE		"HVTunnel.Test.Certificate"
 
 
 
@@ -263,8 +263,7 @@
 ** ------------------------------------------------------------
 */
 
-typedef struct
-{
+typedef struct {
 	char *m_szName;
 	char *m_szValue;
 } HV_CONFIG;
@@ -278,8 +277,7 @@ typedef unsigned int UINT;
 ** Custon Configuration options 
 ** ------------------------------------------------------------
 */
-HV_CONFIG g_HVConfigArray[]= 
-{
+HV_CONFIG g_HVConfigArray[] =  {
 	{HVT_CFG_HTTP_ToURI,NULL},
 	{HVT_CFG_HTTP_CTOUT,NULL},
 	{HVT_CFG_HTTP_TTOUT,NULL},
