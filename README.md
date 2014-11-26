@@ -1,6 +1,6 @@
 # holistic-tunel #
 
-A reverse proxy plugin for SunOne web server
+A reverse proxy plugin for SunOne web server. The plugin is tailored to integrate the jacada interface server for XHTML with web servers.
 
 ## Prerequisites ##
 
@@ -17,6 +17,8 @@ A **Makefile** is provided to compile the software. Just invoke from command lin
 
 ## Installing ##
 
-To install the softeare just 
+To install the software just copy the library (**holistic35.so**) and the provided sample config file (**bootstrap.properties**) to the directory of your choice. 
+
+The second step is modify the sunone config files in order to include the plugin configurarion. The **magnus.conf** and the **obj.conf** must be edited by hand.
 
 ## Configuring SunOne web server ##
