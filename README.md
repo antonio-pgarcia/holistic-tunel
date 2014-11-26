@@ -6,7 +6,6 @@ A reverse proxy plugin for SunOne web server. The plugin is tailored to integrat
 
 The plugin requires the curl library [libcurl](http://curl.haxx.se/libcurl/). You can find a pre-compuled version suitable for your operating system at [download page](http://curl.haxx.se/download.html).
 
-The plugin requires 
 
 ## Compiling ##
 
