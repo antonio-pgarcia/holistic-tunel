@@ -18,6 +18,20 @@ A **Makefile** is provided to compile the software. Just invoke from command lin
 
 To install the software just copy the library (**holistic35.so**) and the provided sample config file (**bootstrap.properties**) to the directory of your choice. 
 
+''
+#----------------------------------------------------------------------
+# Holistic-Tunel l 3.5
+# Configuration file (bootstrap.properties)
+#----------------------------------------------------------------------
+HVTunnel.http.ToURI|http://<THE BACKEND SERVER>
+HVTunnel.http.connect.timeout|1
+HVTunnel.http.transfer.timeout|1
+HVTunnel.http.Redirects|0
+HVTunnel.http.Verbose|0
+HVTunnel.Logg.Level|1
+HVTunnel.Backend.URI|http://<THE AUTH/AUTORIZATION SERVER>
+''
+
 ## Configuring SunOne web server ##
 
 The second step is modify the sunone config files in order to include the plugin configurarion. The **magnus.conf** and the **obj.conf** must be edited by hand.
